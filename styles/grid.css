@@ -1,3 +1,4 @@
+img{ width: 200px; }
 .container {
     height: 100vh;
     display: grid;
@@ -14,15 +15,15 @@
       ". . . . . . . .";
   }
   .c1-item1 { grid-area: c1-item1;
-    background-color: cornflowerblue;
+    
    }
   
   .c1-item2 { grid-area: c1-item2;
-     background-color: cyan;
+    
     }
  
     .c1-item3 { grid-area: c1-item3;
-      background-color: cyan;
+     
      }
   
 
@@ -44,7 +45,7 @@
       ". . . . . . . .";
   }
   
-  .c2-item1 { grid-area: c2-item1; background-color: chartreuse; }
+  .c2-item1 { grid-area: c2-item1; }
 
   .container3 {
    
@@ -63,9 +64,9 @@
       ". . . . . . . .";
   }
   
-  .c3-item1 { grid-area: c3-item1;background-color: crimson; }
-  .c3-item2 { grid-area: c3-item2;background-color: crimson; }
-  .c3-item3 { grid-area: c3-item3;background-color: crimson; }
+  .c3-item1 { grid-area: c3-item1; }
+  .c3-item2 { grid-area: c3-item2; }
+  .c3-item3 { grid-area: c3-item3; }
   
   
   .container4 {
@@ -84,9 +85,9 @@
       ". . . . . . . .";
   }
   
-  .c4-item1 { grid-area: c4-item1;background-color: darkmagenta; }
+  .c4-item1 { grid-area: c4-item1; }
   
-  .c4-item2 { grid-area: c4-item2;background-color: darkmagenta; }
+  .c4-item2 { grid-area: c4-item2; }
   
   .container5 {
     height: 100vh;
@@ -103,9 +104,9 @@
       ". . . . . . . .";
   }
 
-  .c5-item2 { grid-area: c5-item2;background-color: darkmagenta; }
+  .c5-item2 { grid-area: c5-item2; }
   
-  .c5-item1 { grid-area: c5-item1;background-color: darkmagenta; }
+  .c5-item1 { grid-area: c5-item1; }
 
   .container6 {
     
@@ -123,9 +124,9 @@
       ". . . . . . . .";
   }
 
-  .c6-item2 { grid-area: c6-item2; background-color: darkmagenta; }
+  .c6-item2 { grid-area: c6-item2;  }
   
-  .c6-item1 { grid-area: c6-item1; background-color: darkmagenta; }
+  .c6-item1 { grid-area: c6-item1;}
 
 
   .container7 {
@@ -145,9 +146,9 @@
       ". . . . . . . .";
   }
   
-  .c7-item2 { grid-area: c7-item2; background-color: deeppink; }
+  .c7-item2 { grid-area: c7-item2;}
   
-  .c7-item1 { grid-area: c7-item1;  background-color: deeppink; }
+  .c7-item1 { grid-area: c7-item1; }
   
   .container8 {
    
@@ -165,11 +166,11 @@
       ". . . . . .";
   }
   
-  .c8-item1 { grid-area: c8-item1; background-color: mediumslateblue; }
+  .c8-item1 { grid-area: c8-item1;  }
   
-  .c8-item2 { grid-area: c8-item2; background-color: mediumslateblue; }
+  .c8-item2 { grid-area: c8-item2;  }
   
-  .c8-item3 { grid-area: c8-item3; background-color: mediumslateblue; }
+  .c8-item3 { grid-area: c8-item3;  }
 
 
   .container9 {
@@ -186,7 +187,7 @@
       ". . . . .";
   }
   
-  .c9-item1 { grid-area: c9-item1; background-color: cornflowerblue; }
+  .c9-item1 { grid-area: c9-item1;  }
   
   .container10 {
     
@@ -205,9 +206,9 @@
       ". . . . .";
   }
   
-  .c10-item1 { grid-area: c10-item1; background-color: firebrick; }
+  .c10-item1 { grid-area: c10-item1; }
   
-  .c19-item2 { grid-area: c19-item2; background-color: firebrick; }
+  .c19-item2 { grid-area: c19-item2; }
   
 
 /* Celular  */
