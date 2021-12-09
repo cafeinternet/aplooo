@@ -137,7 +137,7 @@ section{
 .div1{
   height: 255px;
   width: 25%;
-  background-image: url("assets/20210602_PLANTA-ABIERTA-ZOTEA-01.png");
+  background-image: url("./fondos/");
 
 
 }
@@ -332,7 +332,7 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 
   }
   
   .one {
-    background-image: url("assets/balcon.png");
+    background-image: url("");
   }
   
   .two {

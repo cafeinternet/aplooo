@@ -1,6 +1,4 @@
 .container {
-  background-image: url("assets/20210602_PLANTA-ABIERTA-ZOTEA-01.png");
-
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -29,7 +27,7 @@
   
 
   .container2 {
-    background-image: url("assets/toga.gif");
+   
 
     height: 100vh;
     display: grid;
@@ -49,7 +47,7 @@
   .c2-item1 { grid-area: c2-item1; background-color: chartreuse; }
 
   .container3 {
-    background-image: url("assets/cubiertas.png");
+   
 
     height: 100vh;
     display: grid;
@@ -71,7 +69,7 @@
   
   
   .container4 {
-    background-image: url("assets/viche.jpg");
+    
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -110,8 +108,7 @@
   .c5-item1 { grid-area: c5-item1;background-color: darkmagenta; }
 
   .container6 {
-    background-image: url("assets/balcon.png");
-
+    
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -132,7 +129,7 @@
 
 
   .container7 {
-    background-image: url("assets/20210602_PLANTA-ABIERTA-ZOTEA-01.png");
+    
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -153,7 +150,7 @@
   .c7-item1 { grid-area: c7-item1;  background-color: deeppink; }
   
   .container8 {
-    background-image: url("assets/cubiertas.png");
+   
     display: grid;
     height: 100vh;
     grid-template-columns: 0.7fr 1.4fr 1.2fr 0.7fr 1.4fr 0.6fr;
@@ -176,7 +173,7 @@
 
 
   .container9 {
-    background-image: url("assets/cubierta.png");
+   
     height: 100vh;
     display: grid;
     grid-template-columns: 0.9fr 1.4fr 0.7fr 1fr 1fr;
@@ -192,7 +189,7 @@
   .c9-item1 { grid-area: c9-item1; background-color: cornflowerblue; }
   
   .container10 {
-    background-image: url("assets/PRUEBA8.png");
+    
 
     height: 100vh;
     display: grid;

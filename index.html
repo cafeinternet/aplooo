@@ -10,6 +10,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 <link rel="stylesheet" href="styles/style.css">
 <link rel="stylesheet" href="styles/grid.css">
+<link rel="stylesheet" href="styles/background.css">
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 </head>
@@ -25,12 +26,12 @@
   </div> 
 
 
-<div class="shuffle">
+<div id="container " class="shuffle">
 
     <div class="container">
-        <div class="c1-item1"></div>
-        <div class="c1-item2"></div>
-        <div class="c1-item3"></div>
+        <div class="c1-item1"> <a href=""></a> </div>
+        <div class="c1-item2"> <a href=""></a> </div>
+        <div class="c1-item3"> <a href=""></a> </div>
     </div> 
   
 
@@ -81,7 +82,100 @@
       <div class="c19-item2"></div>
     </div>
   </div>
+<script>
+  $(document).ready(function(){
+  var classCycle=[' aplo1',' aplo2'];
 
+  var randomNumber = Math.floor(Math.random() * classCycle.length);
+  var classToAdd = classCycle[randomNumber];
+  
+  $('.container').addClass(classToAdd);
+   console.log(classToAdd)
+});
+
+$(document).ready(function(){
+  var classCycle=[' aplo3', 'aplo4'];
+
+  var randomNumber = Math.floor(Math.random() * classCycle.length);
+  var classToAdd = classCycle[randomNumber];
+  
+  $('.container2').addClass(classToAdd);
+   console.log(classToAdd)
+});
+
+$(document).ready(function(){
+  var classCycle=[' aplo5', 'aplo6'];
+
+  var randomNumber = Math.floor(Math.random() * classCycle.length);
+  var classToAdd = classCycle[randomNumber];
+  
+  $('.container4').addClass(classToAdd);
+   console.log(classToAdd)
+});
+
+$(document).ready(function(){
+  var classCycle=[' aplo7', 'aplo8'];
+
+  var randomNumber = Math.floor(Math.random() * classCycle.length);
+  var classToAdd = classCycle[randomNumber];
+  
+  $('.container5').addClass(classToAdd);
+   console.log(classToAdd)
+});
+
+$(document).ready(function(){
+  var classCycle=[' aplo9', 'aplo10'];
+
+  var randomNumber = Math.floor(Math.random() * classCycle.length);
+  var classToAdd = classCycle[randomNumber];
+  
+  $('.container7').addClass(classToAdd);
+   console.log(classToAdd)
+});
+
+$(document).ready(function(){
+  var classCycle=[' aplo11', 'aplo12'];
+
+  var randomNumber = Math.floor(Math.random() * classCycle.length);
+  var classToAdd = classCycle[randomNumber];
+  
+  $('.container8').addClass(classToAdd);
+   console.log(classToAdd)
+});
+
+$(document).ready(function(){
+  var classCycle=[' aplo13', 'aplo14'];
+
+  var randomNumber = Math.floor(Math.random() * classCycle.length);
+  var classToAdd = classCycle[randomNumber];
+  
+  $('.container9').addClass(classToAdd);
+   console.log(classToAdd)
+});
+
+
+
+ </script>
+ <script>
+   document.addEventListener( "DOMContentLoaded", function() {
+  // it's a div, that holds your news
+  // it holds ul with news in li elements
+  var div = document.getElementById( "container" );
+  div.addEventListener( "scroll", function() {
+    var max_scroll = this.scrollHeight - this.clientHeight;
+    var current_scroll = this.scrollTop;
+    var bottom = 100;
+    if ( current_scroll + bottom >= max_scroll ) {
+      var ul = document.getElementsByTagName( "ul" )[ 0 ];
+      var current = parseInt( ul.dataset.current, 10 );
+      var li = document.getElementsByTagName( "li" )[ current ];
+      var new_li = li.cloneNode( true );
+      ul.appendChild( new_li );
+      ul.dataset.current = current + 1;
+    }
+  } );
+} );
+ </script>
   <script>
     $.fn.shuffleChildren = function() {
   $.each(this.get(), function(index, el) {
@@ -105,3 +199,5 @@ $("#shuffle").click(function() {
   </script>
 </body>
 </html>
+
+
