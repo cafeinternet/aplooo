@@ -2,12 +2,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap');
 
+@font-face {
+  font-family: 'MyWebFont';
+  src:  url('./typos/TruenoRgIt.otf') format('otf'),
+        url('./typos/TruenoSBd.otf') format('otf');
+}
+
 .menu1{
-  font-size: 100px;
+  font-size: 88px;
   font-family: 'Shippori Antique', sans-serif;
-}s
+}
 
 a{
+  
   color: #000;
 }
 a:link {
@@ -19,34 +26,43 @@ a:visited {
 }
 
 a:hover {
-  text-decoration: underline;
+ 
+  text-decoration: none;
 }
 
 a:active {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .menu-a{
+  // mix-blend-mode: difference;
+
   position: fixed;
-  top:0;
-  left: 15px;
+  top: 17px;
+  left: 35px;
   z-index: 99999;
   transition: 0.8s;
   text-decoration: none; /* no underline */
-
+  
   
 }
+// .menu-a a{
+//   color: #7fa2ff;
+//   text-shadow: 4px -1px 0px rgba(170, 255, 0, 0.326)
+
+// }
+
 
 .menu-aarchivo{
   position: fixed;
-  top:0;
-  left: 15px;
+  top: 17px;
+  left: 35px;
   z-index: 99999;
   transition: 0.8s;
   text-decoration: none; /* no underline */
   
   &:after{
-    content: 'rchivo';
+    content: 'RCHIVO';
    
     writing-mode: vertical-rl;
     text-orientation: upright;
@@ -61,8 +77,8 @@ a:active {
 
 .menu-p{
   position: fixed;
-  top: 0;
-  right: 15px;
+  top: 17px;
+  right: 35px;
   z-index: 99999;
   text-decoration: none; /* no underline */
 
@@ -71,8 +87,8 @@ a:active {
 
 .menu-l{
   position: fixed;
-  bottom:  0;
-  left:15px;
+  bottom: 27px;
+    left: 24px;
   z-index: 99999;
   text-decoration: none; /* no underline */
 
@@ -80,8 +96,8 @@ a:active {
 }
 .menu-o{
   position: fixed;
-  bottom: 0;
-  right: 5px;
+  bottom: 27px;
+  right: 24px;
   z-index: 99999;
   text-decoration: none; /* no underline */
 

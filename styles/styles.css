@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap");
-img {
-  width: 200px; }
-
 .container {
   height: 100vh;
   display: grid;
@@ -12,7 +9,13 @@ img {
   grid-template-areas: ". . . . . . . ." ". . . . . c1-item2 c1-item2 ." ". c1-item1 c1-item1 . . c1-item2 c1-item2 ." ". c1-item1 c1-item1 . . . . ." ". . . . c1-item3 c1-item3 . ." ". . . . . . . ."; }
 
 .c1-item1 {
-  grid-area: c1-item1; }
+  grid-area: c1-item1;
+  position: relative;
+  top: -115px;
+  left: 100px; }
+  .c1-item1 img {
+    width: 150px;
+    filter: drop-shadow(1px 1px 0 black) drop-shadow(-1px -1px 0 black); }
 
 .c1-item2 {
   grid-area: c1-item2; }
@@ -27,10 +30,12 @@ img {
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: ". . . . . . . ." ". . c2-item1 c2-item1 c2-item1 c2-item1 . ." ". . c2-item1 c2-item1 c2-item1 c2-item1 . ." ". . c2-item1 c2-item1 c2-item1 c2-item1 . ." ". . . . . . . ." ". . . . . . . ."; }
+  grid-template-areas: ". . . . . . . ." ". . . c2-item1 c2-item1 c2-item1 c2-item1  ." ". . . c2-item1 c2-item1 c2-item1 c2-item1  ." ". . . c2-item1 c2-item1 c2-item1 c2-item1  ." ". . . . . . . ." ". . . . . . . ."; }
 
 .c2-item1 {
   grid-area: c2-item1; }
+  .c2-item1 img {
+    width: 350px; }
 
 .container3 {
   height: 100vh;
@@ -165,8 +170,8 @@ img {
 /* Celular  */
 @media (max-width: 600px) {
   .menu1 {
-    font-size: 60px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; }
+    font-size: 88px;
+    font-family: 'Shippori Antique', sans-serif; }
 
   .container {
     display: grid;
@@ -175,6 +180,11 @@ img {
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas: ". . . . . ." ". . c1-item1 c1-item1 . ." ". . . . . ." ". . c1-item2 c1-item2 c1-item2 ." ". c1-item3 . . . ." ". . . . . ."; }
+
+  .c1-item1 {
+    grid-area: c1-item1;
+    position: relative;
+    top: 28px; }
 
   .container2 {
     display: grid;
@@ -359,11 +369,13 @@ img {
   -webkit-background-size: cover;
   -moz-background-size: cover; }
 
+@font-face {
+  font-family: 'MyWebFont';
+  src: url("./typos/TruenoRgIt.otf") format("otf"), url("./typos/TruenoSBd.otf") format("otf"); }
 .menu1 {
-  font-size: 100px;
+  font-size: 88px;
   font-family: 'Shippori Antique', sans-serif; }
 
-s
 a {
   color: #000; }
 
@@ -374,15 +386,15 @@ a:visited {
   text-decoration: none; }
 
 a:hover {
-  text-decoration: underline; }
+  text-decoration: none; }
 
 a:active {
-  text-decoration: underline; }
+  text-decoration: none; }
 
 .menu-a {
   position: fixed;
-  top: 0;
-  left: 15px;
+  top: 17px;
+  left: 35px;
   z-index: 99999;
   transition: 0.8s;
   text-decoration: none;
@@ -390,14 +402,14 @@ a:active {
 
 .menu-aarchivo {
   position: fixed;
-  top: 0;
-  left: 15px;
+  top: 17px;
+  left: 35px;
   z-index: 99999;
   transition: 0.8s;
   text-decoration: none;
   /* no underline */ }
   .menu-aarchivo:after {
-    content: 'rchivo';
+    content: 'RCHIVO';
     writing-mode: vertical-rl;
     text-orientation: upright;
     position: absolute;
@@ -407,24 +419,24 @@ a:active {
 
 .menu-p {
   position: fixed;
-  top: 0;
-  right: 15px;
+  top: 17px;
+  right: 35px;
   z-index: 99999;
   text-decoration: none;
   /* no underline */ }
 
 .menu-l {
   position: fixed;
-  bottom: 0;
-  left: 15px;
+  bottom: 27px;
+  left: 24px;
   z-index: 99999;
   text-decoration: none;
   /* no underline */ }
 
 .menu-o {
   position: fixed;
-  bottom: 0;
-  right: 5px;
+  bottom: 27px;
+  right: 24px;
   z-index: 99999;
   text-decoration: none;
   /* no underline */ }

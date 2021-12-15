@@ -1,4 +1,4 @@
-img{ width: 200px; }
+
 .container {
     height: 100vh;
     display: grid;
@@ -15,9 +15,16 @@ img{ width: 200px; }
       ". . . . . . . .";
   }
   .c1-item1 { grid-area: c1-item1;
-    
+    position: relative;
+    top: -115px;
+    left: 100px;
+   
+    & img{
+       width:150px;
+       filter: drop-shadow(1px 1px 0 black) 
+       drop-shadow(-1px -1px 0 black);
    }
-  
+  }
   .c1-item2 { grid-area: c1-item2;
     
     }
@@ -38,14 +45,17 @@ img{ width: 200px; }
     grid-auto-flow: row;
     grid-template-areas:
       ". . . . . . . ."
-      ". . c2-item1 c2-item1 c2-item1 c2-item1 . ."
-      ". . c2-item1 c2-item1 c2-item1 c2-item1 . ."
-      ". . c2-item1 c2-item1 c2-item1 c2-item1 . ."
+      ". . . c2-item1 c2-item1 c2-item1 c2-item1  ."
+      ". . . c2-item1 c2-item1 c2-item1 c2-item1  ."
+      ". . . c2-item1 c2-item1 c2-item1 c2-item1  ."
       ". . . . . . . ."
       ". . . . . . . .";
   }
   
-  .c2-item1 { grid-area: c2-item1; }
+  .c2-item1 { grid-area: c2-item1; 
+  & img{
+    width: 350px;
+  } }
 
   .container3 {
    
@@ -215,10 +225,10 @@ img{ width: 200px; }
 /* Celular  */
 @media (max-width: 600px) {
   .menu1{
-    font-size: 60px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    font-size: 88px;
+    font-family: 'Shippori Antique', sans-serif;
   }
-
+  
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -233,6 +243,11 @@ img{ width: 200px; }
       ". c1-item3 . . . ."
       ". . . . . .";
   }
+  .c1-item1 { grid-area: c1-item1;
+    position: relative;
+    top: 28px;
+    
+   }
    
   .container2 {
     display: grid;
