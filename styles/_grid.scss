@@ -62,11 +62,12 @@ img{ width: 200px; }
       ". . . c3-item2 c3-item2 . . ."
       ". . . . . . c3-item3 ."
       ". . . . . . . .";
+
   }
   
-  .c3-item1 { grid-area: c3-item1; }
-  .c3-item2 { grid-area: c3-item2; }
-  .c3-item3 { grid-area: c3-item3; }
+  .c3-item1 { grid-area: c3-item1; z-index: 99999; }
+  .c3-item2 { grid-area: c3-item2; z-index: 99999;}
+  .c3-item3 { grid-area: c3-item3; z-index: 99999;}
   
   
   .container4 {
@@ -124,9 +125,9 @@ img{ width: 200px; }
       ". . . . . . . .";
   }
 
-  .c6-item2 { grid-area: c6-item2;  }
+  .c6-item2 { grid-area: c6-item2; z-index: 999999;}
   
-  .c6-item1 { grid-area: c6-item1;}
+  .c6-item1 { grid-area: c6-item1; z-index: 999999;}
 
 
   .container7 {
@@ -206,9 +207,9 @@ img{ width: 200px; }
       ". . . . .";
   }
   
-  .c10-item1 { grid-area: c10-item1; }
-  
-  .c19-item2 { grid-area: c19-item2; }
+  .c10-item1 { grid-area: c10-item1; z-index: 99999; }
+ 
+  .c19-item2 { grid-area: c19-item2; z-index: 99999; }
   
 
 /* Celular  */
@@ -228,7 +229,7 @@ img{ width: 200px; }
       ". . . . . ."
       ". . c1-item1 c1-item1 . ."
       ". . . . . ."
-      ". . . c1-item2 c1-item2 ."
+      ". . c1-item2 c1-item2 c1-item2 ."
       ". c1-item3 . . . ."
       ". . . . . .";
   }
@@ -246,7 +247,7 @@ img{ width: 200px; }
   }
 
   .container3 {
-    height: 100vh;
+    
     display: grid;
     grid-template-columns: 0.6fr 1.1fr 1.3fr 1.2fr 0.8fr;
     grid-template-rows: 1fr 1.3fr 0.7fr 1.3fr 0.9fr 1.3fr 0.5fr;

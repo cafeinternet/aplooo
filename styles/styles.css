@@ -1,7 +1,369 @@
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap");
+img {
+  width: 200px; }
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1.6fr 0.4fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: ". . . . . . . ." ". . . . . c1-item2 c1-item2 ." ". c1-item1 c1-item1 . . c1-item2 c1-item2 ." ". c1-item1 c1-item1 . . . . ." ". . . . c1-item3 c1-item3 . ." ". . . . . . . ."; }
+
+.c1-item1 {
+  grid-area: c1-item1; }
+
+.c1-item2 {
+  grid-area: c1-item2; }
+
+.c1-item3 {
+  grid-area: c1-item3; }
+
+.container2 {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: ". . . . . . . ." ". . c2-item1 c2-item1 c2-item1 c2-item1 . ." ". . c2-item1 c2-item1 c2-item1 c2-item1 . ." ". . c2-item1 c2-item1 c2-item1 c2-item1 . ." ". . . . . . . ." ". . . . . . . ."; }
+
+.c2-item1 {
+  grid-area: c2-item1; }
+
+.container3 {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: ". . . . . . . ." ". c3-item1 . . . . . ." ". . . c3-item2 c3-item2 . . ." ". . . . . . c3-item3 ." ". . . . . . . ."; }
+
+.c3-item1 {
+  grid-area: c3-item1;
+  z-index: 99999; }
+
+.c3-item2 {
+  grid-area: c3-item2;
+  z-index: 99999; }
+
+.c3-item3 {
+  grid-area: c3-item3;
+  z-index: 99999; }
+
+.container4 {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: ". . . . . . . ." ". . . . . . . ." ". c4-item1 c4-item1 . . c4-item2 c4-item2 ." ". . . . . . . ." ". . . . . . . ."; }
+
+.c4-item1 {
+  grid-area: c4-item1; }
+
+.c4-item2 {
+  grid-area: c4-item2; }
+
+.container5 {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: ". . . . . . . ." ". c5-item1 c5-item1 . . c5-item2 c5-item2 ." ". . . . . . . ." ". . . . . . . ." ". . . . . . . ."; }
+
+.c5-item2 {
+  grid-area: c5-item2; }
+
+.c5-item1 {
+  grid-area: c5-item1; }
+
+.container6 {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: ". . . . . . . ." ". . . . . . . ." ". . . . . . . ." ". c6-item1 c6-item1 . . c6-item2 c6-item2 ." ". . . . . . . ."; }
+
+.c6-item2 {
+  grid-area: c6-item2;
+  z-index: 999999; }
+
+.c6-item1 {
+  grid-area: c6-item1;
+  z-index: 999999; }
+
+.container7 {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: ". . . . . . . ." ". . c7-item1 c7-item1 . . . ." ". . . . . . . ." ". . . . c7-item2 c7-item2 . ." ". . . . c7-item2 c7-item2 . ." ". . . . . . . ."; }
+
+.c7-item2 {
+  grid-area: c7-item2; }
+
+.c7-item1 {
+  grid-area: c7-item1; }
+
+.container8 {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 0.7fr 1.4fr 1.2fr 0.7fr 1.4fr 0.6fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: ". . . . . ." ". c8-item1 . . c8-item2 ." ". . . . . ." ". . c8-item3 . . ." ". . . . . ."; }
+
+.c8-item1 {
+  grid-area: c8-item1; }
+
+.c8-item2 {
+  grid-area: c8-item2; }
+
+.c8-item3 {
+  grid-area: c8-item3; }
+
+.container9 {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 0.9fr 1.4fr 0.7fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: ". . . . ." ". c9-item1 . . ." ". . . . ."; }
+
+.c9-item1 {
+  grid-area: c9-item1; }
+
+.container10 {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: ". . . . ." ". c10-item1 . . ." ". . . . ." ". . . c19-item2 ." ". . . . ."; }
+
+.c10-item1 {
+  grid-area: c10-item1;
+  z-index: 99999; }
+
+.c19-item2 {
+  grid-area: c19-item2;
+  z-index: 99999; }
+
+/* Celular  */
+@media (max-width: 600px) {
+  .menu1 {
+    font-size: 60px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: ". . . . . ." ". . c1-item1 c1-item1 . ." ". . . . . ." ". . c1-item2 c1-item2 c1-item2 ." ". c1-item3 . . . ." ". . . . . ."; }
+
+  .container2 {
+    display: grid;
+    grid-template-columns: 0.6fr 1.7fr 0.7fr;
+    grid-template-rows: 1fr 1.1fr 0.9fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: ". . ." ". c2-item1 ." ". . ."; }
+
+  .container3 {
+    display: grid;
+    grid-template-columns: 0.6fr 1.1fr 1.3fr 1.2fr 0.8fr;
+    grid-template-rows: 1fr 1.3fr 0.7fr 1.3fr 0.9fr 1.3fr 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: ". . . . ." ". . . c3-item1 ." ". . . . ." ". . c3-item2 . ." ". . . . ." ". c3-item3 . . ." ". . . . ."; }
+
+  .container4 {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0.8fr 1.4fr 0.8fr;
+    grid-template-rows: 1.1fr 1.2fr 0.5fr 1.2fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: ". . ." ". c4-item1 ." ". . ." ". c4-item2 ." ". . ."; }
+
+  .container5 {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0.7fr 1.5fr 0.4fr 1.6fr 0.8fr;
+    grid-template-rows: 1.1fr 1.2fr 0.4fr 1.3fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: ". . . . ." ". . . c5-item1 ." ". . . . ." ". c5-item2 . . ." ". . . . ."; }
+
+  .container6 {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0.7fr 1.5fr 0.4fr 1.6fr 0.8fr;
+    grid-template-rows: 1.1fr 1.2fr 0.4fr 1.3fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: ". . . . ." ". c6-item1 . . ." ". . . . ." ". . . c6-item2 ." ". . . . ."; }
+
+  .container7 {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1.5fr 0.4fr 2.2fr 0.1fr 1.3fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: ". . . . ." ". c7-item1 c7-item1 . ." ". . . . ." ". . c7-item2 c7-item2 ." ". . . . ."; }
+
+  .container8 {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1.4fr 1.5fr 0.4fr 0.7fr;
+    grid-template-rows: 0.6fr 1.4fr 0.4fr 1.2fr 0.7fr 1.5fr 1.2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: ". . . . ." ". . c8-item1 . ." ". . . . ." ". c8-item2 . . ." ". . . . ." ". . c8-item3 . ." ". . . . ."; }
+
+  .container9 {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0.9fr 1.4fr 0.7fr;
+    grid-template-rows: 1fr 1.2fr 0.8fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: ". . ." ". c9-item1 ." ". . ." ". . ." ". . ."; }
+
+  .container10 {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr 1.3fr 0.7fr;
+    grid-template-rows: 0.7fr 1.2fr 0.9fr 1.2fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: ". . . ." ". . c10-item1 ." ". . . ." ". c10-item2 . ." ". . . ."; } }
+.aplo1 {
+  background: url(fondos/01F.jpg) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover; }
+
+.aplo2 {
+  background: url(fondos/02F.jpg) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover; }
+
+.aplo3 {
+  background: url(fondos/03F.jpg) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover; }
+
+.aplo4 {
+  background: url(fondos/04F.jpg) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover; }
+
+.aplo5 {
+  background: url(fondos/05F.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover; }
+
+.aplo6 {
+  background: url(fondos/06F.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover; }
+
+.aplo7 {
+  background: url(fondos/07F.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover; }
+
+.aplo8 {
+  background: url(fondos/08F.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover; }
+
+.aplo9 {
+  background: url(fondos/09F.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover; }
+
+.aplo10 {
+  background: url(fondos/10F.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover; }
+
+.aplo11 {
+  background: url(fondos/11F.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover; }
+
+.aplo12 {
+  background: url(fondos/12F.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover; }
+
+.aplo13 {
+  background: url(fondos/13F.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover; }
+
+.aplo14 {
+  background: url(fondos/14F.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover; }
+
+.aplo15 {
+  background: url(fondos/15F.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover; }
+
 .menu1 {
   font-size: 100px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; }
+  font-family: 'Shippori Antique', sans-serif; }
 
+s
 a {
   color: #000; }
 
@@ -25,6 +387,23 @@ a:active {
   transition: 0.8s;
   text-decoration: none;
   /* no underline */ }
+
+.menu-aarchivo {
+  position: fixed;
+  top: 0;
+  left: 15px;
+  z-index: 99999;
+  transition: 0.8s;
+  text-decoration: none;
+  /* no underline */ }
+  .menu-aarchivo:after {
+    content: 'rchivo';
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    position: absolute;
+    letter-spacing: -22px;
+    top: 67px;
+    left: -15px; }
 
 .menu-p {
   position: fixed;
@@ -120,5 +499,27 @@ section {
   content: " ";
   padding: 2em 3.5em;
   mix-blend-mode: darken; }
+
+.showcase {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  transition: 0.5s;
+  z-index: 2; }
+
+.showcase video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8; }
 
 /*# sourceMappingURL=styles.css.map */
